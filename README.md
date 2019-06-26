@@ -57,7 +57,7 @@
 ### 源码安装
 
 - 安装Go 1.11+
-- `go get -d github.com/ouqiang/gocron`
+- `go get -d github.com/zhujingfa/gocron`
 - `export GO111MODULE=on` 
 - 编译 `make`
 - 启动
