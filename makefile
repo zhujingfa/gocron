@@ -20,11 +20,10 @@ kill:
 
 .PHONY: gocron
 gocron:
-	proxychains4 go build $(RACE) -o bin/gocron ./cmd/gocron
-
+	CGO_ENABLED=0 proxychains4 go build -a -ldflags '-s' -v $(RACE) -o bin/gocron ./cmd/gocron
 .PHONY: node
 node:
-	proxychains4 go build $(RACE) -o bin/gocron-node ./cmd/node
+	CGO_ENABLED=0 proxychains4 go build -a -ldflags '-s' -v $(RACE) -o bin/gocron-node ./cmd/node
 
 .PHONY: test
 test:
