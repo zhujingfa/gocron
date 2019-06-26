@@ -8,12 +8,12 @@ import (
 	macaron "gopkg.in/macaron.v1"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/go-xorm/core"
+	"xorm.io/core"
 	"github.com/go-xorm/xorm"
 	_ "github.com/lib/pq"
-	"github.com/ouqiang/gocron/internal/modules/app"
-	"github.com/ouqiang/gocron/internal/modules/logger"
-	"github.com/ouqiang/gocron/internal/modules/setting"
+	"github.com/zhujingfa/gocron/internal/modules/app"
+	"github.com/zhujingfa/gocron/internal/modules/logger"
+	"github.com/zhujingfa/gocron/internal/modules/setting"
 )
 
 type Status int8
